@@ -1,0 +1,2 @@
+-- Optional: any additional init SQL goes here.
+-- The database "gym_planner" is already created by POSTGRES_DB env var.
