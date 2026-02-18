@@ -1,0 +1,25 @@
+{
+  "name": "gym-planner",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@9.15.4",
+  "scripts": {
+    "dev": "pnpm --filter @gym-planner/api dev & pnpm --filter @gym-planner/mobile dev",
+    "dev:api": "pnpm --filter @gym-planner/api dev",
+    "dev:mobile": "pnpm --filter @gym-planner/mobile dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,json,md}\"",
+    "test": "pnpm -r test",
+    "db:generate": "pnpm --filter @gym-planner/api db:generate",
+    "db:migrate": "pnpm --filter @gym-planner/api db:migrate",
+    "db:push": "pnpm --filter @gym-planner/api db:push",
+    "db:studio": "pnpm --filter @gym-planner/api db:studio",
+    "clean": "pnpm -r exec rm -rf node_modules dist .turbo && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3"
+  }
+}
